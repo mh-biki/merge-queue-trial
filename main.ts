@@ -24,6 +24,10 @@ export function subtractBig(a: Big, b: Big): Big {
   return a.minus(b);
 }
 
+export function multiplyBig(a: Big, b: Big): Big {
+  return a.mul(b);
+}
+
 if (import.meta.main) {
   console.log("Add 2 + 3 =", add(2, 3));
 }
