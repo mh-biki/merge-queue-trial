@@ -1,5 +1,5 @@
 import { assertEquals } from "https://deno.land/std@0.177.0/testing/asserts.ts";
-import { add, subtract, multiply, divide, addBig } from "./main.ts";
+import { add, subtract, multiply, divide, addBig, subtractBig } from "./main.ts";
 import { Big } from "math";
 
 Deno.test(function addTest() {
@@ -21,4 +21,8 @@ Deno.test(function divideTest() {
 
 Deno.test(function addBigTest() {
   assertEquals(addBig(Big(0.1), Big(0.2)), Big(0.3));
+});
+
+Deno.test(function subtractBigTest() {
+  assertEquals(subtractBig(Big(0.1), Big(0.2)), Big(-0.1));
 });
