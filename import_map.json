@@ -1,5 +1,6 @@
 {
   "imports": {
-    "math": "https://deno.land/x/math@v1.1.0/mod.ts"
+    "math": "https://deno.land/x/math@v1.1.0/mod.ts",
+    "collections": "https://deno.land/std@0.177.0/collections/mod.ts"
   }
 }
