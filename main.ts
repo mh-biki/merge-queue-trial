@@ -20,6 +20,10 @@ export function addBig(a: Big, b: Big): Big {
   return a.plus(b);
 }
 
+export function subtractBig(a: Big, b: Big): Big {
+  return a.minus(b);
+}
+
 if (import.meta.main) {
   console.log("Add 2 + 3 =", add(2, 3));
 }
